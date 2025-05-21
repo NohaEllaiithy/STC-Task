@@ -1,0 +1,31 @@
+curl --location 'http://localhost:8088/api/calendar/optimizeConflict' \
+--header 'Content-Type: application/json' \
+--data '{
+"workingHours": {
+"start": "09:00",
+"end": "17:00"
+},
+"timeZone": "Asia/Riyadh",
+"events": [
+{
+"title": "Team Standup",
+"startTime": "2025-05-14T09:30:00+03:00",
+"endTime": "2025-05-14T10:00:00+03:00"
+},
+{
+"title": "Client Meeting",
+"startTime": "2025-05-14T10:00:00+03:00",
+"endTime": "2025-05-14T11:00:00+03:00"
+},
+{
+"title": "1:1 Review",
+"startTime": "2025-05-14T10:30:00+03:00",
+"endTime": "2025-05-14T11:30:00+03:00"
+},
+{
+"title": "Lunch Break",
+"startTime": "2025-05-14T13:00:00+03:00",
+"endTime": "2025-05-14T14:00:00+03:00"
+}
+]
+}'

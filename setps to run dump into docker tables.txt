@@ -1,0 +1,10 @@
+3shan arun ldump b eltrteb kda
+
+1)
+docker cp dump.sql rental_db:/tmp/dump.sql
+
+2)  docker-compose up 
+
+w mn cmd tanya 
+3)
+docker exec -it rental_db psql -U postgres -d usersDB -f /tmp/dump.sql
